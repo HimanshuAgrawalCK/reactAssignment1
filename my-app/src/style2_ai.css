@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* Container for centering */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 5%;
+}
+
+/* Form Styling */
+.form1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+/* Labels */
+.form1 label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+}
+
+/* Input fields */
+.form1 input,
+.form1 select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border 0.3s ease-in-out;
+}
+
+/* Input Focus Effect */
+.form1 input:focus,
+.form1 select:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Gender box styling */
+.genderBox {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* Error messages */
+.errorMessage {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 2px;
+}
+
+/* Checkbox and Terms */
+.form1 div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Enabled Button */
+button:not([disabled]) {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Disabled Button */
+button[disabled] {
+    background-color: lightgrey;
+    cursor: not-allowed;
+}
+
+/* Hover effect */
+button:not([disabled]):hover {
+    background-color: #388e3c;
+}
