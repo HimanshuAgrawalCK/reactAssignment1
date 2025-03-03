@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  #root{
+    width: 30%;
+  }
+
+
+  .checkBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+  /* Form Container */
+  .form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+  }
+  
+  /* Headings */
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Input Fields */
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+  }
+  
+  input:focus {
+    border-color: #667eea;
+    outline: none;
+  }
+  
+  /* Select Dropdown */
+  select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  /* Gender Radio Buttons */
+  .gender {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+
+  
+  
+  .gender label {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .fieldGroup{
+    display: flex;
+  }
+  .errorMessage{
+    color: red;
+    font-size: 1em;
+  }
+  /* Submit Button */
+  button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  button:hover {
+    background: #5648a2;
+  }
+  
+  /* Login & Signup Links */
+  p {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  nav{
+    display: flex;
+    justify-content: space-around;
+  }
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
+
+  .navpanel{
+    display: flex;
+    justify-content: space-around;
+  }

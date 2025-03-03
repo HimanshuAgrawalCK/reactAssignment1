@@ -1,0 +1,46 @@
+const formMaster = (data,handleClick)=>[
+    {type:"text",htmlFor:"first_name",label:"First Name", name:"first_name", className:"first_name",value:data.first_name,onchange:handleClick},
+    {type:"text",htmlFor:"last_name",label:"Last Name", name:"last_name", className:"last_name",value:data.last_name,onchange:handleClick},
+    {type:"number",htmlFor:"phone",label:"Phone No.", name:"phone", className:"phone",value:data.phone,onchange:handleClick},
+    {type:"email",htmlFor:"mail",label:"E Mail ", name:"email", className:"email",value:data.email,onchange:handleClick},
+    // {type:"radio",label:"Male",id:"male",name:"gender",checked:data.gender==="male",onChange:handleClick,value:"male"},
+    // {type:"radio",label:"Female",id:"female",name:"gender",onChange:handleClick,value:"female"},
+    // {type:"radio",label:"Other",id:"other",name:"gender",onChange:handleClick,value:"other"},
+    // {type:"text",label:"First Name", name:"first", className:"first_name",value:data.first_name,onChange:handleClick()}
+    {type:"fieldGroup",className:"gender", label:"Gender ",name:"gender", fields:[{type:"radio", label:"Male", id:"male", value:"male",onchange:handleClick},{type:"radio", label:"Female", id:"female", value:"female",onchange:handleClick}]},
+    {type:"stateGroup", className:"states",label:"State",name:"state",onchange:handleClick,states:[
+      "Andhra Pradesh",
+      "Arunachal Pradesh",
+      "Assam",
+      "Bihar",
+      "Chhattisgarh",
+      "Goa",
+      "Gujarat",
+      "Haryana",
+      "Himachal Pradesh",
+      "Jharkhand",
+      "Karnataka",
+      "Kerala",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Manipur",
+      "Meghalaya",
+      "Mizoram",
+      "Nagaland",
+      "Odisha",
+      "Punjab",
+      "Rajasthan",
+      "Sikkim",
+      "Tamil Nadu",
+      "Telangana",
+      "Tripura",
+      "Uttar Pradesh",
+      "Uttarakhand",
+      "West Bengal"
+    ]},
+    {type:"password",label:"Password",htmlFor:"password", name:"password", className:"password",value:data.password,onchange:handleClick},
+    {type:"password",label:"Confirm Password",htmlFor:"cpassword", name:"cpassword", className:"cpassword",value:data.cpassword,onchange:handleClick},
+    {type:"checkbox",label:"Terms and Conditions Applied",name:"check",className:"check",value:data.check,onchange:handleClick}
+  ]
+
+export default formMaster;
