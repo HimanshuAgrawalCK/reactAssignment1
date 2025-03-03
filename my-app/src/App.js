@@ -66,7 +66,7 @@ export default function Appp()
       {
         errors.password="Password must be more than 6 characters and less than 20 characters";
       }
-      if(data.password.length==0)
+      if(data.password.length===0)
       {
         errors.password="Password is empty";
       }
@@ -187,7 +187,7 @@ export default function Appp()
         {errors.address && <span className="errorMessage">{errors.address}</span>}
 
         <label htmlFor="states">State</label>
-        <select name="states" className="states" value={data.states} onChange={handleClick}>
+        <select name="states" className="states" value={data.state} onChange={handleClick}>
           <option> --- Select State --- </option> 
           {states.map((state,index)=>
           (<option key={index} value={state}>{state}</option>)            
