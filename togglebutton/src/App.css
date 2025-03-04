@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+.Container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vh;
+}
+
+.card-box-dark{
+  background-color: #000;
+  color: white;
+}
+
+.card-box-light{
+  background-color: white;
+}
+
+.comp2-box-light{
+  background-color: white;
+}
+
+.comp2-box-dark{
+  background-color: #000;
+  color: white;
+}
